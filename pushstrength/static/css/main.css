@@ -1,57 +1,46 @@
 html {
-  background: transparent url("../img/web_bg.jpg") no-repeat center center fixed;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background: url("../img/web_bg.jpg") no-repeat 100% 100% #3947ca;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right bottom;
+  min-height: 100%;
   font-size: 30px;
 }
-
 body {
   background-color: transparent;
+  height: 100%;
 }
-
-#body-wrapper {
+.container {
+ max-width: 15rem;
+}
+.twitter-button {
+  min-height: 33px;
   padding-top: 0.5rem;
+  text-align: right;
 }
-
-.twitter-share-button {
-  padding-right: 2rem;
+.intro-text {
+  color: #fff;
+  font-family: BentonSansCond;
+  font-size: 0.7rem;
+  line-height: 1.2;
+  margin: 1.5rem auto 0;
+  max-width: 12rem;
 }
-
-#logo {
-  width: 15rem;
+.notified {  
+  margin: 1.5rem auto 0;
+  max-width: 12rem;
 }
-
 #subscribe-form .control-group {
   margin-bottom: 0;
 }
-
 #subscribe-form .buttons {
   text-align: right;
 }
-
-#intro-text {
-  color: #FFFFFF;
-  font-family: BentonSansCond;
-  font-size: 0.7rem;
-  font-style: normal;
-  line-height: 120%;
-  padding: 0.6rem;
-}
-
 input.email-input[type="email"] {
   width: 96%;
   height: 1.1rem;
   font-size: 0.7rem;
   font-family: BentonSansCond;
   height: 0.9rem;
+  text-align: center;
 }
 input.email-input[type="email"]:invalid:focus {
   border-color: #F0534E;
@@ -66,16 +55,13 @@ input.email-input[type="email"]:invalid:focus {
 
 button.get-notified {
   font-family: BentonSansCond;
-  
   font-size: 0.6rem;
   width: 5rem;
   height: 1.1rem;
-  padding: 0rem 0rem 0.2rem 0rem;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.56);
   background-color: #F0534E;
   border-radius: 0.25em;
-
   background-image: -webkit-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
   background-image: -moz-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
   background-image: -ms-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
@@ -88,7 +74,6 @@ button.get-notified {
               inset 0 -.2em 0 hsla(0,0%,100%,.1),
               inset 0 -.25em 0 hsla(0,0%,0%,.25),
               0 .25em .25em hsla(0,0%,0%,.05);
-
   cursor: pointer;
   display: inline-block;
   text-shadow: 0 1px 1px hsla(0,0%,100%,.25);
