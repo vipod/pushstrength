@@ -4,8 +4,8 @@ import os
 # external services details
 
 # MailChimp
-MAILCHIMP_API_KEY = '283c9a275e04c1193ea9843e4e0ee77c-us6'
-MAILCHIMP_LIST_ID = 'f5d50aeec6'
+MAILCHIMP_API_KEY = ''
+MAILCHIMP_LIST_ID = ''
 
 # Twitter
 TWITTER_USERNAME = 'PUSHstrength'
