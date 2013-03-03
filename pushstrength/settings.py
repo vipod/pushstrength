@@ -9,6 +9,8 @@ MAILCHIMP_LIST_ID = ''
 
 # Twitter
 TWITTER_USERNAME = 'PUSHstrength'
+TWITTER_URL = 'http://pushstrength.com'
+TWITTER_TITLE = 'PUSH Strength'
 
 PROJECT_DIR = os.path.dirname(__file__)
 path_join = os.path.join

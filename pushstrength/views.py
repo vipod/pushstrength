@@ -5,14 +5,18 @@ from django.template import RequestContext
 from django.core.validators import email_re
 from django.http import HttpResponseRedirect
 
-from .settings import MAILCHIMP_LIST_ID
+from .settings import MAILCHIMP_LIST_ID, TWITTER_USERNAME, \
+    TWITTER_TITLE, TWITTER_URL
 
 
 def home(request):
     if request.method == 'POST':
         return subscribe(request)
     else:
-        return render_to_response('index.html', {},
+        return render_to_response('index.html', {
+            'twitter_username': TWITTER_USERNAME,
+            'twitter_title': TWITTER_TITLE,
+            'twitter_url': TWITTER_URL},
             context_instance=RequestContext(request))
 
 def subscribe(request):

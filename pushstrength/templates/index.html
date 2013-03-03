@@ -20,10 +20,19 @@
   <body>
     <div class="container">
       <div class="twitter-button">
-        <a href="https://twitter.com/share" class="twitter-share-button"
-           data-via="PUSHstrength" data-size="large"
-           data-related="PUSHstrength">Tweet</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <!-- AddThis Button BEGIN -->
+        <a class="addthis_button_twitter" tw:via="{{ twitter_username }}"
+           tw:related="{{ twitter_username }}"><img
+           src="https://twitter.com/images/resources/twitter-bird-dark-bgs.png"
+           width="64" height="64" border="0" alt="Share to Twitter" /></a>
+        <script type="text/javascript">
+          var addthis_share = {
+            'url': '{{ twitter_url }}',
+            'title': '{{ twitter_title }}'
+          }
+        </script>
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-5133c3e319aef3a3"></script>
+        <!-- AddThis Button END -->
       </div>
       <div class="text-center">
           <img alt="In PUSH we trust." id="logo"
