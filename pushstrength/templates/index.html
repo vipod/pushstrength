@@ -18,19 +18,13 @@
   <body>
     <div class="container">
       <div class="twitter-button">
-        <!-- AddThis Button BEGIN -->
-        <a class="addthis_button_twitter" tw:via="{{ twitter_username }}"
-           tw:related="{{ twitter_username }}"><img
-           src="https://twitter.com/images/resources/twitter-bird-dark-bgs.png"
-           width="64" height="64" border="0" alt="Share to Twitter" /></a>
-        <script type="text/javascript">
-          var addthis_share = {
-            'url': '{{ twitter_url }}',
-            'title': '{{ twitter_title }}'
-          }
-        </script>
-        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-5133c3e319aef3a3"></script>
-        <!-- AddThis Button END -->
+        <a class="addthis_button_twitter"
+           title="Follow on Twitter" target="_blank"
+           href="http://twitter.com/pushstrength">
+          <img width="64" height="64" border="0" alt="Follow on Twitter"
+                src="https://twitter.com/images/resources/twitter-bird-dark-bgs.png"
+               />
+        </a>
       </div>
       <div class="text-center">
           <img alt="In PUSH we trust." id="logo"
