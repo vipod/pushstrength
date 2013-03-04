@@ -9,13 +9,25 @@ body {
   height: 100%;
 }
 .container {
- max-width: 15rem;
+  max-width: 15rem;
+  padding: 70px 0 0;
 }
 .twitter-button {
-  min-height: 33px;
-  padding-top: 0.5rem;
-  text-align: right;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
+.addthis_button_twitter {
+  background: url(../img/twitter.png);
+  display: block;
+  height: 70px;
+  overflow: hidden;
+  text-indent: -9999px;
+  width: 70px;
+}
+.addthis_button_twitter:hover {
+  background-position: 0 -70px;
+} 
 .intro-text {
   color: #fff;
   font-family: BentonSansCond;
